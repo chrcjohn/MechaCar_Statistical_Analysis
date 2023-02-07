@@ -24,7 +24,7 @@ Suspension_Coil <- read.csv(file="columbia bootcamp/15 homework/Resources/Suspen
 library("dplyr")
 # Deliverable 2
 # Import the csv file
-Suspension_Coil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+Suspension_Coil <- read.csv(file='columbia bootcamp/15 homework/Resources/Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
 
 #create summary table with multiple columns 
 total_summary <- Suspension_Coil %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups = 'keep')
